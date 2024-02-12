@@ -13,11 +13,11 @@ export class PortfolioComponent {
 
   showModel(element: any) {
     this.element = element;
-    $('#boxModal').css('display', 'flex')
-    this.showNextBtn()
-    this.showPrevBtn()
     let imgPath:any =  $(element).children('img').attr('src');
     $('#innerBox').css('background-image', 'url( ' + imgPath + ')')
+    this.showNextBtn()
+    this.showPrevBtn()
+    $('#boxModal').css('display', 'flex')
   }
 
   hideBoxModel(event: any) {
