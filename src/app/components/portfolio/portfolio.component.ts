@@ -17,8 +17,8 @@ export class PortfolioComponent {
     let imgPath =  $(this.element).children('img').attr('src');
     $('#innerBox').css('background-image', 'url(' + imgPath + ')')
     console.log(imgPath)
-    // this.showNextBtn()
-    // this.showPrevBtn()
+    this.showNextBtn()
+    this.showPrevBtn()
   }
 
   hideBoxModel(event: any) {
