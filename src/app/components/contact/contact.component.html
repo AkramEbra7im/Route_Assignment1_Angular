@@ -1,0 +1,15 @@
+<div class="container-fluid py-5 ">
+    <app-star [addressFromParent]="address" [colorFromParent]="color"></app-star>
+    <form action="" class="w-50 p-3 mx-auto">
+        <label for="userName" class="position-relative">userName :</label>
+        <input type="text" (keyup)="showLabel($event)" name="userName" id="userName" placeholder="userName" class="form-control border-0 border-bottom py-3 position-relative">
+        <label for="userAge" class="position-relative">userAge :</label>
+        <input type="text" (keyup)="showLabel($event)" name="userAge" id="userAge" placeholder="userAge" class="form-control border-0 border-bottom py-3 position-relative">
+        <label for="userEmail" class="position-relative">userEmail :</label>
+        <input type="text" (keyup)="showLabel($event)" name="userEmail" id="userEmail" placeholder="userEmail" class="form-control border-0 border-bottom py-3 position-relative">
+        <label for="userPassword" class="position-relative">userPassword :</label>
+        <input type="text" (keyup)="showLabel($event)" name="userPassword" id="userPassword" placeholder="userPassword" class="form-control border-0 border-bottom py-3 position-relative">
+        <button class="btn mt-4 text-white">send Message</button>
+    </form>
+</div>
+

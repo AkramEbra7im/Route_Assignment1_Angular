@@ -1,0 +1,15 @@
+label{
+    color: #1abc9c;
+    padding-bottom: 7px;
+    padding-top: 5px;
+    top: 50px;
+}
+input:focus{
+    box-shadow: none;
+}
+button{
+    background-color: #1abc9c;
+}
+button:hover{
+    background-color: #1abc9c;
+}

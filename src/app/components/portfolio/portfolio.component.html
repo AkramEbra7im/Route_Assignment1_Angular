@@ -1,0 +1,64 @@
+<div class="container py-5 ">
+    <app-star [addressFromParent]="address" [colorFromParent]="color"></app-star>
+
+    <div class="row py-5 g-5">
+        
+            <div class="col-md-4 col-sm-6">
+                <div   #image1 (click)="showModel(image1)" class="item overflow-hidden position-relative border-2 rounded-3">
+                    <img src="assets/port1.png" class="w-100" alt="">
+                    <div class="layer">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div #image2 (click)="showModel(image2)" class="item overflow-hidden position-relative border-2 rounded-3">
+                    <img src="assets/port2.png" class="w-100" alt="">
+                    <div class="layer">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div #image3 (click)="showModel(image3)" class="item overflow-hidden position-relative border-2 rounded-3">
+                    <img src="assets/port3.png" class="w-100" alt="">
+                    <div class="layer">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div #image4 (click)="showModel(image4)" class="item overflow-hidden position-relative border-2 rounded-3">
+                    <img src="assets/port1.png" class="w-100" alt="">
+                    <div class="layer">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div #image5 (click)="showModel(image5)" class="item overflow-hidden position-relative border-2 rounded-3">
+                    <img src="assets/port2.png" class="w-100" alt="">
+                    <div class="layer">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div #image6 (click)="showModel(image6)" class="item overflow-hidden position-relative border-2 rounded-3">
+                    <img src="assets/port3.png" class="w-100" alt="">
+                    <div class="layer">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+
+    <div id="boxModal" class="bg-primary bg-opacity-25" (click)="hideBoxModel($event)">
+        <div   id="innerBox" class="innerBox position-relative p-2 d-flex align-items-center justify-content-between">
+            <i id="prev" (click)="prevelment()" class="fa-regular fa-2x fa-arrow-alt-circle-left "></i>
+            <i id="next" (click)="nextelment()" class="fa-regular fa-2x fa-arrow-alt-circle-right position-absolute p-2 end-0"></i>
+        </div>
+    </div>
+</div>
+

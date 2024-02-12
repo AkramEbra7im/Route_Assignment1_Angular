@@ -1,0 +1,45 @@
+#boxModal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.innerBox{
+    width: 600px;
+    min-height: 400px;
+    background-image: url(../../../assets/avataaars.svg);
+    background-size: cover;
+}
+
+
+.innerBox i ,.item{
+    cursor: pointer;
+}
+
+.layer{
+    background-color: #1abc9ca8;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.item:hover .layer{
+    opacity: 100;
+}
+
+#prev,#next{
+    color: #fff;
+}
