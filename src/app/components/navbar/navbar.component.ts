@@ -6,6 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-https://github.com/AkramEbra7im/Route_Js_Exam.git
-
 }
