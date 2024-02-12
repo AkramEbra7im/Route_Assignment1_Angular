@@ -15,7 +15,7 @@ export class PortfolioComponent {
     this.element = element;
     this.showNextBtn()
     this.showPrevBtn()
-    let imgPath: string = '../../../' + $(element).children('img').attr('src');
+    let imgPath:any =  $(element).children('img').attr('src');
     $('#boxModal').css('display', 'flex')
     $('#innerBox').css('background-image', 'url(' + imgPath + ')')
     console.log($(element).parent().next().children('div').children('img').attr('src'));
