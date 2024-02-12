@@ -16,9 +16,8 @@ export class PortfolioComponent {
     this.showNextBtn()
     this.showPrevBtn()
     let imgPath:any =  $(element).children('img').attr('src');
+    $('#innerBox').css('background-image', 'url( ' + imgPath + ')')
     $('#boxModal').css('display', 'flex')
-    $('#innerBox').css('background-image', 'url( ./' + imgPath + ')')
-    console.log($(element).parent().next().children('div').children('img').attr('src'));
   }
 
   hideBoxModel(event: any) {
