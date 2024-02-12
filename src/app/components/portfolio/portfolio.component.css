@@ -13,7 +13,6 @@
 .innerBox{
     width: 600px;
     min-height: 400px;
-    background-image: url(../../../assets/avataaars.svg);
     background-size: cover;
 }
 
