@@ -17,7 +17,7 @@ export class PortfolioComponent {
     this.showPrevBtn()
     let imgPath:any =  $(element).children('img').attr('src');
     $('#boxModal').css('display', 'flex')
-    $('#innerBox').css('background-image', 'url(' + imgPath + ')')
+    $('#innerBox').css('background-image', 'url( ./' + imgPath + ')')
     console.log($(element).parent().next().children('div').children('img').attr('src'));
   }
 
