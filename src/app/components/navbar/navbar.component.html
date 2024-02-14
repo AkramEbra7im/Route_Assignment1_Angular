@@ -1,4 +1,4 @@
-<nav id="navbar" class="navbar navbar-expand-md navbar-light sticky-top">
+<nav id="navbar" [ngClass]="{'py-4': isScrolled}" class="navbar navbar-expand-md navbar-light sticky-top">
     <div class="container">
         <a class="navbar-brand text-white fs-2 fw-bold" routerLink="home">START FRAMWORK</a>
         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
@@ -9,13 +9,13 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                 <li class="nav-item me-3">
-                    <a class="nav-link text-white fw-bold mt-3 mt-md-0 px-2" routerLink="about" routerLinkActive="bg-info rounded-2" >ABOUT</a>
+                    <a class="nav-link text-white fw-bold mt-3 mt-md-0 px-2" routerLink="about" routerLinkActive="activeColor rounded-2" >ABOUT</a>
                 </li>
                 <li class="nav-item me-3">
-                    <a class="nav-link text-white fw-bold mt-3 mt-md-0 px-2" routerLink="portfolio" routerLinkActive="bg-info rounded-2">PORTFOILO</a>
+                    <a class="nav-link text-white fw-bold mt-3 mt-md-0 px-2" routerLink="portfolio" routerLinkActive="activeColor rounded-2">PORTFOLIO</a>
                 </li>
                 <li class="nav-item me-3">
-                    <a class="nav-link text-white fw-bold mt-3 mt-md-0 px-2" routerLink="contact" routerLinkActive="bg-info rounded-2">CONTACT</a>
+                    <a class="nav-link text-white fw-bold mt-3 mt-md-0 px-2" routerLink="contact" routerLinkActive="activeColor rounded-2">CONTACT</a>
                 </li>
                 
             </ul>

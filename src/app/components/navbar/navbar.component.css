@@ -1,7 +1,13 @@
-*{
+* {
     color: #fff;
 }
 
-nav{
+.activeColor{
+    background-color: #1abc9c;
+}
+
+nav {
+    transition: padding 1s;
     background-color: #2C3E50;
 }
+
